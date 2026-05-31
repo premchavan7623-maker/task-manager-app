@@ -1,0 +1,27 @@
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* remove default focus outlines, we handle our own */
+input:focus, select:focus, textarea:focus, button:focus {
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  font-family: inherit;
+}
+
+/* hide date input spinner on webkit */
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0.5;
+  cursor: pointer;
+}
